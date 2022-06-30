@@ -1,0 +1,158 @@
+@media screen and (max-width:480px) { 
+    .titulo-index{
+        text-align: center auto;
+        justify-content: center auto;
+    }
+    .indexp{
+        font-size: medium;
+    }
+    .digitaldestacada {
+        img{
+        display: none;
+        }
+    }
+    .digitaldestacadados {
+        
+        a img{
+            display: flex;
+            justify-content: center auto;
+            align-items: center auto;
+            align-content: center auto;
+            flex-direction: column;
+            width: 400px;
+            padding-left: 1rem;
+        }
+    }
+    .digital_colecciones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center auto;
+        align-items: center auto;
+        align-content: center auto;
+        padding-left: 2rem;
+        a img{
+            display: flex;
+            flex-direction: column;
+            width: 350px; 
+            margin-top: 2rem;   
+            
+        }
+    }
+    .contenedor {
+        grid-template-areas:
+        "section1"
+        "aside "
+        "footer";
+        grid-template-columns: 3fr;
+        grid-row:  5fr 5fr 1fr;
+        justify-content: center auto;
+        align-items: center auto;
+        align-content: center auto;
+        .section1{
+            .colecciondestacada{
+                display: none;
+            }
+            .colecciondestacadados {
+                @include flexible (column);
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+                padding-left: 0.7rem;
+                
+                img{ 
+                    width: 350px;
+                    margin-top: 0.7rem;
+                    transition: all 500ms ease;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }    
+            }
+        }
+        .cuerpoabout{
+            display: flex;
+            justify-content: flex-start;
+            .tituloabout{
+                .abouttext { 
+                    justify-content: center auto;
+                    text-align: center auto;
+                    align-items: center auto;
+                    align-content: center auto;
+                    font-size: x-large;
+                }
+            } 
+        }
+        .aboutaside{
+            display: flex;
+            justify-content: center auto;
+            .logoaside{
+                img{
+                    width: 350px;
+                    padding-left: 1rem;
+                    padding-top: 0;
+                }
+                
+            }
+        }
+    }
+    .coleccionny{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .panoramicanoa{
+        
+        @include flexible(column);
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        img{
+            @include flexible(column);
+            width: 300px;
+        }    
+        h2 {
+            text-align: right;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            font-size: large;
+            padding-left: 7px;
+        }
+    }
+
+    .contactMain{
+        @include flexible(column);
+        .formulario{
+            width: 100%;
+            @include flexible(row);
+            @include borde(black);
+            margin-bottom: 10px;
+            align-items: center auto;
+            align-content: center auto;
+            justify-content: space-around;
+        }
+        .mapa {
+            display: none;
+        }
+    }
+    footer{
+        
+        text-align: flex start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        font-size: small;
+
+    }
+    
+
+}
+
+
+

@@ -1,0 +1,59 @@
+.shop-photo-cd{
+    @include flexible (row);
+    @extend .espacio;
+}
+.ref-shop{
+    @include flexible (row);
+    justify-content: space-around;
+    @extend .espacio;
+}
+.noa-shop{
+    @include flexible (row);
+    justify-content: space-around;
+    align-items: center;
+    @extend .espacio;
+}
+.mapuche-shop{
+    @include flexible (row);
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    @extend .espacio;
+}
+.div-shop{
+    @include flexible (row);
+    justify-content: space-around;
+    align-items: center;
+    @extend .espacio;
+}
+.water-shop{
+    @include flexible (row);
+    justify-content: space-around;
+    align-items: center;
+    @extend .espacio; 
+}
+.shop-photo-dig{
+    @include flexible (row);
+    justify-content: space-around;
+    align-items: center;
+    @extend .espacio;
+}
+.bigeyes-shop{
+    @include flexible (row);
+    justify-content: space-around;
+    align-items: center;
+    @extend .espacio;
+}
+.tecno-shop{
+    @include flexible (row);
+    justify-content: space-around;
+    align-items: center;
+    @extend .espacio;
+}
+.power-shop{
+    @include flexible (row);
+    justify-content: space-around;
+    align-items: center;
+    @extend .espacio;
+}

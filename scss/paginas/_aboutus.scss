@@ -1,0 +1,44 @@
+.contenedor{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-row: 1fr 5fr 1fr;
+    grid-template-areas: 
+    "section1 aside"
+    "footer footer";
+    .cuerpoabout{
+        grid-area: section1;
+            .tituloabout{
+                @extend .encabezado;
+                @include flexible(row);
+                font-size: 2rem;
+                justify-content: flex-start;
+            }
+           
+    }
+    .aboutaside{
+
+        grid-area: aside;
+        display: flex;
+        justify-content: center auto;
+        .tituloc{
+            
+            @extend .encabezado;
+            @include flexible (column);
+            font-size: 2rem;
+            justify-content: flex-start;
+        }
+        
+        .logoaside{
+            img{
+                width: 450px;
+                padding-top: 8rem;
+               
+            }
+            
+        }
+    }
+    
+    }
+
